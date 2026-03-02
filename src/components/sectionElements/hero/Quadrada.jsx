@@ -9,14 +9,15 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
   const backgroundClasses = {
     dark: "bg-bgFixedDark",
     light: "bg-bgFixedLight",
-    default: "from-bgSectionDark to-darker",
+    default: "from-primary to-primary",
   };
 
   const bgGradient = backgroundClasses[colorMode] || backgroundClasses.default;
-  const titleColor = colorMode === "light" ? "text-black" : "text-white";
-  const subtitleColor = colorMode === "light" ? "text-black" : "text-white";
-  const obsTextColor = colorMode === "light" ? "text-black" : "text-white";
-  const descriptionColor = colorMode === "light" ? "text-black" : "text-white";
+  const titleColor = colorMode === "light" ? "text-black" : "text-secondary";
+  const subtitleColor = colorMode === "light" ? "text-black" : "text-secondary";
+  const obsTextColor = colorMode === "light" ? "text-black" : "text-secondary";
+  const descriptionColor =
+    colorMode === "light" ? "text-black" : "text-secondary";
 
   return (
     <div
@@ -70,7 +71,7 @@ export default function Quadrada({ appDownloadButtons, colorMode }) {
                 {/* Observação */}
                 <MotionDivDownToUp>
                   <div className="flex justify-center desktop1:justify-start">
-                    <div className="flex flex-col items-center desktop1:flex-row text-primary">
+                    <div className="flex flex-col items-center desktop1:flex-row text-secondary">
                       {content.texts.hero.obsHero.icon}
 
                       <p

@@ -24,16 +24,16 @@ export default function SectionHeader({
   // Configurações baseadas no colorMode
   switch (colorMode) {
     case "dark":
-      miniTitleTextColor = miniTitleTextColor ?? "text-white";
-      titleColor = titleColorSet ?? "text-white";
-      subtitleColor = subtitleColorSet ?? "text-white";
+      miniTitleTextColor = miniTitleTextColor ?? "text-secondary";
+      titleColor = titleColorSet ?? "text-secondary";
+      subtitleColor = subtitleColorSet ?? "text-secondary";
       if (miniTitleBgColor === true) miniTitleBgColor = "bg-bgSectionDark";
       break;
     case "light":
     default:
       miniTitleTextColor = miniTitleTextColor ?? "text-labelIcons";
-      titleColor = titleColorSet ?? "text-white";
-      subtitleColor = subtitleColorSet ?? "text-white";
+      titleColor = titleColorSet ?? "text-secondary";
+      subtitleColor = subtitleColorSet ?? "text-secondary";
       if (miniTitleBgColor === true) miniTitleBgColor = "bg-minititle";
       break;
   }

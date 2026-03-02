@@ -48,7 +48,7 @@ import imgTestimonial3 from "../assets/imgs/testimonials/deposition3.png";
 import imgTestimonial4 from "../assets/imgs/testimonials/deposition4.png";
 import { Briefcase, Gavel } from "lucide-react";
 import { Users } from "lucide-react";
-import { FileText } from "lucide-react";
+import { FileText, ShoppingCart } from "lucide-react";
 
 const currentYear = new Date().getFullYear();
 
@@ -96,8 +96,8 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A Definir</span>,
-  instagramProfile: "humbertoariza.adv", // Sem o @
-  instagramSecundaryProfile: "monteiroariza.adv", // Sem o @
+  instagramProfile: "arizaadvocacia", // Sem o @
+  instagramSecundaryProfile: "", // Sem o @
   facebookProfile: "A_Definir",
   linkeDinProfile: "A_Definir",
   x: "A_Definir",
@@ -128,7 +128,7 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Ignorar não resolve.
-          <span className="text-primary"> Agir transforma.</span>
+          <span className="text-white"> Agir transforma.</span>
         </h1>
       ),
       subtitle:
@@ -262,8 +262,8 @@ const content = {
       },
       card3: {
         img: featuresImg3,
-        title: "Direito Penal",
-        subtitle: "Defesa em processos criminais e investigações.",
+        title: "Direito do Consumidor",
+        subtitle: "Defesa contra abusos e garantia nas relações de consumo.",
         description: (
           <div>
             A_Definir <br />
@@ -272,26 +272,7 @@ const content = {
           </div>
         ),
         imgModal: imgFeaturesCardModal3,
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-gavel-icon lucide-gavel"
-          >
-            <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" />
-            <path d="m16 16 6-6" />
-            <path d="m8 8 6-6" />
-            <path d="m9 7 8 8" />
-            <path d="m21 11-8-8" />
-          </svg>
-        ),
+        icon: <ShoppingCart />,
         buttonLabelModal: "Fale Conosco",
         buttonLabel: "Saiba Mais",
       },
@@ -426,7 +407,7 @@ const content = {
         img: aboutImg1,
         alt: "Imagem profissional de escritório/advogado(a)",
       },
-      miniTag: "QUEM É O DR. HUMBERTO ARIZA",
+      miniTag: "QUEM É O DR. HUMBERTO MASSOLA ARIZA",
       title: "Nossa História e Propósito",
       subtitle:
         "Da gestão de bens à advocacia moderna, com foco em soluções práticas",

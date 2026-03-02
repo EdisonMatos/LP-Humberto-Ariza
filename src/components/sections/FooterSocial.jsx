@@ -57,7 +57,7 @@ export default function FooterSocial({
     default:
       footerBackground =
         "bg-gradient-to-b from-bgSectionDark to-black bg-cover bg-center bg-no-repeat";
-      textColor = "text-white";
+      textColor = "text-secondary";
       break;
   }
 
@@ -90,7 +90,7 @@ export default function FooterSocial({
                 <div className="mt-2 opacity-90">
                   <div className="flex gap-[10px] items-center">
                     {instagram && <InstagramFooter />}
-                    {instagramSecundary && <InstagramSecundaryFooter/>}
+                    {instagramSecundary && <InstagramSecundaryFooter />}
                     {tiktok && <TikTokFooter />}
                     {facebook && <FacebookFooter />}
                     {x && <XFooter />}

@@ -24,16 +24,17 @@ export default function About({
   const bgClasses = {
     dark: "bg-bgFixedDark",
     light: "bg-bgFixedLight",
-    default: "bg-bgSectionDark",
+    default: "bg-primary",
   };
   const textClasses = {
-    dark: "text-white",
+    dark: "text-secondary",
     light: "text-black",
     default: "text-white",
   };
   const bgClass = bgClasses[colorMode] || bgClasses.default;
   const titleColor = textClasses[colorMode] || textClasses.default;
-  const subtitleColor = colorMode === "light" ? "text-black/80" : "text-white";
+  const subtitleColor =
+    colorMode === "light" ? "text-black/80" : "text-secondary";
 
   const images = [
     {
@@ -114,7 +115,7 @@ export default function About({
             sectionHeaderSubtitle={content.texts.about.subtitle}
             color={colorMode}
             type="article"
-            titleColorSet={titleColor}
+            titleColorSet="text-secondary"
             subtitleColorSet={subtitleColor}
           />
           <MotionDivDownToUp>
