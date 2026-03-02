@@ -58,7 +58,7 @@ export default function Index() {
         phoneTerciario={false}
         expedientesecond={false}
         instagram={true}
-        instagramSecundary={true}
+        instagramSecundary={false}
       />
       <FloatingWhatsappButton />
       <BackToTopButton />
