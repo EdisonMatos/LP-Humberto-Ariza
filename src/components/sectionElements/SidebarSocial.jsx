@@ -59,9 +59,9 @@ export default function SidebarSocial({ colorMode }) {
           className={`p-button-rounded p-button-outlined lg:hidden ${
             colorMode
               ? scrolled
-                ? "text-primary"
-                : "text-primary"
-              : "text-primary"
+                ? "text-secondary"
+                : "text-secondary"
+              : "text-secondary"
           } w-[40px] h-[40px]`}
           onClick={() => setVisible(true)}
         />
@@ -101,22 +101,22 @@ export default function SidebarSocial({ colorMode }) {
                       outlined
                       className={`${
                         colorMode
-                          ? "text-primary"
-                          : "h-2rem w-2rem p-[5px] text-white"
+                          ? "text-secondary"
+                          : "h-2rem w-2rem p-[5px] text-secondary"
                       }`}
                     ></Button>
                   </span>
                 </div>
                 <div className="h-screen overflow-y-auto">
-                  <hr className="m-5 mx-3 border-top-1 surface-border border-primary" />
+                  <hr className="m-5 mx-3 border-top-1 surface-border border-secondary" />
                   <ul className="p-3 m-0 list-none">
                     <li>
                       {submenuVisible && (
                         <ul
                           className={`${
                             colorMode
-                              ? "text-primary"
-                              : "p-0 m-0 -mt-[16px] overflow-hidden font-medium text-white"
+                              ? "text-secondary"
+                              : "p-0 m-0 -mt-[16px] overflow-hidden font-medium text-secondary"
                           } list-none text-paragraph3 font-mainFont`}
                         >
                           <li>

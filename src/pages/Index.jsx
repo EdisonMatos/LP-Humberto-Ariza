@@ -44,7 +44,7 @@ export default function Index() {
         colorMode={colorMode}
         instagram={true}
         socialPrint={true}
-        instagramSecundary={true}
+        instagramSecundary={false}
       />
       <Cta colorMode={colorMode} />
       <Steps colorMode={colorMode} />
@@ -52,7 +52,7 @@ export default function Index() {
       <Faq colorMode={colorMode} />
       <FooterSocial
         colorMode={colorMode}
-        addres={true}
+        addres={false}
         addresSecundario={false}
         phoneSecundario={false}
         phoneTerciario={false}

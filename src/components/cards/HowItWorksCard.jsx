@@ -20,7 +20,7 @@ export default function HowItWorksCard({
       break;
     case "default":
     default:
-      textColor = "text-white";
+      textColor = "text-secondary";
       textOpacity = "opacity-80";
       break;
   }
@@ -53,12 +53,13 @@ export default function HowItWorksCard({
       <p className="text-[16px] text-colorWhite opacity-70 text-center desktop1:text-left w-full">
         {description}
       </p>
-
     </div>
   );
 
   return animation ? (
-    <MotionDivDownToUp className="tablet1:w-[45%]">{BaseContent}</MotionDivDownToUp>
+    <MotionDivDownToUp className="tablet1:w-[45%]">
+      {BaseContent}
+    </MotionDivDownToUp>
   ) : (
     StaticContent
   );
